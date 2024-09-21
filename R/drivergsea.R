@@ -13,7 +13,7 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-drivergene <- function(GeneSet,binary = '/Program Files/Mozilla Firefox/firefox.exe'){
+drivergsea <- function(GeneSet,binary = '/Program Files/Mozilla Firefox/firefox.exe'){
   random_ints = sample(1:10000, 1, replace = TRUE)
   library(httr)
   library(tidyverse)
