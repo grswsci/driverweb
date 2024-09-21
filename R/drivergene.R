@@ -166,5 +166,7 @@ drivergene <- function(GeneName,binary = '/Program Files/Mozilla Firefox/firefox
   cite_link = paste0("[",cite,"] ",df_all$hrefs)
   write.table(text_long_string,paste0(GeneName,"_text_long_string.txt"),quote = F,row.names = F)
   write.table(cite_link,paste0(GeneName,"_text_long_cite.txt"),quote = F,row.names = F)
+  driver$closeWindow()
+  rD = rD$server$stop()
 }
 
