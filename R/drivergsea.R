@@ -53,6 +53,7 @@ drivergsea <- function(GeneSet,binary = '/Program Files/Mozilla Firefox/firefox.
   driver$findElement(using='xpath',value="//input[@id='email']")$sendKeysToElement(list('858852776@qq.com'))
   driver$findElement(using='xpath',value="//input[@type='button']")$clickElement()
   driver$screenshot(display = TRUE)
+  Sys.sleep(5)
 
   #搜索基因集-----------------------------------------------------------------
   driver$findElement(using = 'css selector', "a[href='msigdb/index.jsp']")$clickElement()
